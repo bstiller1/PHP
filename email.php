@@ -29,7 +29,7 @@ $headers .= "From: " . $from . "\r\n";
 $headers .= "CC: " . $cc . "\r\n";
 
 // send mail
-if(!mail($to, $subject, $message, $headers)){
+if(mail($to, $subject, $message, $headers)){
 	echo "Your email could not be sent";
 }else{
 // Let the user know email has been sent
