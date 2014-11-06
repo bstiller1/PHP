@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Email Form</title>
+</head>
+
+<body>
+<form method="post" action="email.php" target="_blank">
+<input type="hidden" name="toaddress" value="stiller.blake@gmail.com" />
+<input type="hidden" name="subject" value="Email Form" />
+
+<table>
+	<tr>
+    	<td><label for="message"></label></td>
+        <td><textarea name="message" required></textarea></td>
+     </tr>
+     <tr>
+     	<td><label for="from"></label></td>
+        <td><input type="email" name="from" required /></td>
+      </tr>
+      <tr>
+      	<td><label for="cc"></label></td>
+        <td><input type="email" name="cc" /></td>
+      </tr>
+      <tr>
+      	<td>&nbsp;</td>
+        <td><input type="reset" value="Clear" /><input type="submit" value="Send" /></td>
+      </tr>
+ </table>
+ </form>
+    
+</body>
+</html>
