@@ -6,21 +6,22 @@
 </head>
 
 <body>
+<h3>Send an Email:</h3>
 <form method="post" action="email.php" target="_blank">
 <input type="hidden" name="toaddress" value="stiller.blake@gmail.com" />
 <input type="hidden" name="subject" value="Email Form" />
 
 <table>
 	<tr>
-    	<td><label for="message"></label></td>
+    	<td><label for="message">Message:</label></td>
         <td><textarea name="message" required></textarea></td>
      </tr>
      <tr>
-     	<td><label for="from"></label></td>
+     	<td><label for="from">From:</label></td>
         <td><input type="email" name="from" required /></td>
       </tr>
       <tr>
-      	<td><label for="cc"></label></td>
+      	<td><label for="cc">CC:</label></td>
         <td><input type="email" name="cc" /></td>
       </tr>
       <tr>
